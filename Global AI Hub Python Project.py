@@ -44,7 +44,8 @@ while True:
     print("1) List Books")
     print("2) Add Book")
     print("3) Remove Book")
-    choice = input("Enter your choice (1/2/3): ")
+    print("q) Quit")
+    choice = input("Enter your choice (1/2/3/q): ")
 
     if choice == '1':
         lib.list_books()
@@ -52,5 +53,7 @@ while True:
         lib.add_book()
     elif choice == '3':
         lib.remove_book()
+    elif choice == 'q':
+        break
     else:
-        print("Please enter 1, 2, or 3.")
+        print("Please enter 1, 2, 3 or q.")
