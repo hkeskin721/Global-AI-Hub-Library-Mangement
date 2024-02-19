@@ -30,7 +30,7 @@ class Library:
         self.file.seek(0)
         books = self.file.readlines()
         self.file.seek(0)
-        self.file.truncate()
+        
         for book in books:
             if title not in book:
                 self.file.write(book)
